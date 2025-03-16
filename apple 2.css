@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     background: #5e5e5e;
     min-height: 100vh;
     width: 100%;
@@ -14,56 +15,62 @@
     align-items: center;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin:auto;
+    margin: auto;
     padding: 20px 0;
-    
 }
 
-.logo{
+.logo {
     width: 40px;
     border-radius: 5px;
 }
 
-ul li{
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
     display: inline-block;
 }
 
-ul li a{
+ul li a {
     color: rgb(253, 126, 0);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
-.content .text{
+.content .text {
     width: 40%;
     color: #fff;
-
+    margin-bottom: 20px;
 }
 
-.content .text h2{
+.content .text h2 {
     font-size: 40px;
     text-transform: uppercase;
 }
 
-.content .text p{
+.content .text p {
     font-size: 18px;
     margin: 20px 0;
 }
-.content .text a{
+
+.content .text a {
     text-decoration: none;
     background: #fff;
     color: #000;
@@ -71,33 +78,36 @@ ul li a{
     border-radius: 20px;
     font-weight: bold;
 }
-.content .image{
+
+.content .image {
     width: 30%;
-    
+    margin-bottom: 20px;
 }
 
-.content .image img{
-    width: 450px;
+.content .image img {
+    width: 100%;
     border-radius: 10px;
 }
 
-.icons{
+.icons {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.icons img{
+.icons img {
     width: 40px;
     transition: 0.6s;
     cursor: pointer;
     border-radius: 50px;
+    margin: 5px;
 }
 
-.icons img:hover{
+.icons img:hover {
     transform: scale(1.5);
 }
 
@@ -122,6 +132,10 @@ ul li a{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .content .text, .content .image {
+        width: 100%;
     }
 
     .icons {
