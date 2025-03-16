@@ -111,19 +111,31 @@ ul li a{
     .header ul {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+    }
+
+    .header ul li {
+        margin: 10px 0;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .icons {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .icons img {
         margin: 5px;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
