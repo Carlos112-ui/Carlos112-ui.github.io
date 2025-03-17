@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    cursor: url('wrench.png'), auto; /* Add this line */
 }
 
 .container {
