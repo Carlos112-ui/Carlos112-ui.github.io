@@ -70,6 +70,11 @@ font-size: 40px;
 text-transform: uppercase;
 font-weight: 700;
 letter-spacing: 2px;
+margin-bottom: 20px; /* Add space below the heading */
+}
+
+.content .text p {
+    margin-bottom: 20px; /* Add space below each paragraph */
 }
 
 .container .pics{
@@ -77,3 +82,4 @@ justify-content: center;
 display: flex;
 
 }
+
